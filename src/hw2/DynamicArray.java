@@ -10,7 +10,7 @@ package hw2;
  * @author Patiwet
  */
 public class DynamicArray {
-    private int[] arr;
+    private int[] arr;//
     private int capacity;
     private int size; // Last element can be indexed at size-1
 
