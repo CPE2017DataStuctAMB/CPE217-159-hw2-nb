@@ -18,7 +18,6 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-
         System.out.println("\n____TestCase1___");
         DynamicArray var1 = new DynamicArray(2);
         System.out.println("now Empty : "+var1.isEmpty());
@@ -64,6 +63,17 @@ public class Main {
         var4.set(10, 555);
         var4.remove(10);
         var4.printStructure();
+        
+        //New testCase by pusit
+        System.out.println("\n____TestCase5___");
+        DynamicArray var5 = new DynamicArray(3);
+        var5.pushBack(5);
+        var5.pushBack(-1);
+        var5.popBack();
+        var5.remove(9);  //Error
+        var5.set(5, 3);  //Error
+        var5.printStructure();
+        
     }
 
 }

@@ -20,7 +20,7 @@ public class DynamicArray {
     }
 
     public void pushBack(int data){
-        // FIXED by Ball, Aunpyz
+        // FIXED by Ball, Aunpyz, pusit
         if(size < capacity){
             arr[size] = data;
         }else{
@@ -33,7 +33,6 @@ public class DynamicArray {
             arr[size] = data;
         }
         size++;
-
     }
 
     public int popBack(){
@@ -46,7 +45,6 @@ public class DynamicArray {
             System.out.println("ERROR");
             return 0;
         }
-
     }
 
     public int get(int i){
@@ -68,12 +66,12 @@ public class DynamicArray {
     }
 
     public void remove(int i){
-        // FIXED by ball, Aunpyz lasted 590831 0255
+        // FIXED by ball, Aunpyz, pusit lasted 590831 0255
         if(i < size-1 && i >= 0){
             int s = 0;
             boolean f = false;
             while(s<size){
-                if(s==i-1)
+                if(s==i)
                     f = true;
                 if(f){
                     arr[s] = arr[s+1];
@@ -108,5 +106,4 @@ public class DynamicArray {
         }
         System.out.println(" ]");
     }
-
 }
