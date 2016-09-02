@@ -68,10 +68,10 @@ public class Main {
         System.out.println("\n____TestCase5___");
         DynamicArray var5 = new DynamicArray(3);
         var5.pushBack(5);
-        var5.pushBack(-1);
         var5.popBack();
         var5.remove(9);  //Error
         var5.set(5, 3);  //Error
+        System.out.println(var5.get(5)); //Error
         var5.printStructure();
         
     }
