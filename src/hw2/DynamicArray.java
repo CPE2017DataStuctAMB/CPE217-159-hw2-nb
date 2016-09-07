@@ -98,12 +98,9 @@ public class DynamicArray {
         // FIXED by ball
         System.out.print("Size = " + size + ", Cap = " + capacity + ", arr = [ ");
         for (int i=0;i<size;i++){
-            if(arr[i]>0) {
-                System.out.print(arr[i]);
-                if(i < size-1)
-                    System.out.print(",");
-            }
-        }
-        System.out.println(" ]");
+            System.out.print(arr[i]);
+            if(i < size-1)
+                System.out.print(",");
+        }System.out.println(" ]");
     }
 }
